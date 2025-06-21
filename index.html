@@ -1,41 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <link rel="icon" href="./images/favicon.png" type="image/x-icon">
-  <link rel="apple-touch-icon" href="./images/favicon.png">
-  
-  <title>Week nine</title>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
 
-  <meta name="description" content="Step by step, line by line — becoming a Full Stack Developer in one year.">
-	<meta name="keywords" content="HTML, CSS, JavaScript">
-	<meta name="author" content="Maria Fernanda">
-	<meta name="robots" content="index, follow" />
-	<meta name="theme-color" content="#ffffff" />
+    <title>Week nine</title>
 
-	<meta property="og:title" content="Week number nine">
-	<meta property="og:description" content="Step by step, line by line — becoming a Full Stack Developer in one year.">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <meta
+      name="description"
+      content="Step by step, line by line — becoming a Full Stack Developer in one year."
+    />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Maria Fernanda" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#ffffff" />
 
-  <header>
-    <h2>Week number nine</h2>
-    <h3>María Fernanda | Full Stack Developer in Progress</h3>
-    <p>
-      Step by step, line by line — becoming a Full Stack Developer in one year.
-    </p> 
-  </header>
+    <meta property="og:title" content="Week number nine" />
+    <meta
+      property="og:description"
+      content="Step by step, line by line — becoming a Full Stack Developer in one year."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Week number nine</h2>
+      <h3>María Fernanda | Full Stack Developer in Progress</h3>
+      <p>
+        Step by step, line by line — becoming a Full Stack Developer in one
+        year.
+      </p>
+    </header>
 
-  <main>
-    <h1>Blog</h1>
-  </main>
+    <main>
+      <h1>Recipe</h1>
 
-  <footer>
-    <p>2025 - Maria Fernanda</p>
-  </footer>
-  
-</body>
+      <form class="form">
+        <h2>Add a new recipe</h2>
+
+        <label for="recipeName">Recipe name</label>
+        <input
+          type="text"
+          id="recipeName"
+          name="recipeName"
+          placeholder="e.g. Avocado Toast"
+          required
+        />
+
+        <label for="ingredients">Ingredients</label>
+        <textarea
+          id="ingredients"
+          name="ingredients"
+          placeholder="e.g. 2 slices of bread&#10;1 avocado&#10;Salt"
+          required
+        ></textarea>
+
+        <label for="instructions">Instructions</label>
+        <textarea
+          id="instructions"
+          name="instructions"
+          placeholder="Write the preparation steps here..."
+          required
+        ></textarea>
+
+        <label for="category">Category</label>
+        <select id="category" name="category" required>
+          <option value="" disabled selected>Select a category</option>
+          <option value="breakfast">Breakfast</option>
+          <option value="lunch">Lunch</option>
+          <option value="dinner">Dinner</option>
+          <option value="snack">Snack</option>
+        </select>
+
+        <label for="image">Image URL</label>
+        <input
+          type="url"
+          name="imageURL"
+          id="imageURL"
+          placeholder="https://example.com/image.jpg"
+        />
+
+        <section class="form_btn">
+          <button type="submit" class="form_btn_submit">Add recipe</button>
+          <button type="reset" class="form_btn_reset">Recet</button>
+        </section>
+
+      </form>
+
+      <section id="recipes" class="recipes"></section>
+
+    </main>
+
+    <footer>
+      <p>2025 - Maria Fernanda</p>
+    </footer>
+  </body>
 </html>
