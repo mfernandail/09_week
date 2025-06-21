@@ -25,3 +25,46 @@ footer {
   padding: 10px;
   text-align: center;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.form input, textarea, select {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+textarea {
+  min-height: 80px;
+}
+
+.form_btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.form_btn_submit, .form_btn_reset {
+  width: 150px;
+  padding: 5px 10px;
+
+}
