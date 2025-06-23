@@ -42,7 +42,7 @@ label {
   margin-bottom: 5px;
 }
 
-main h2 {
+.subTitle {
   text-align: center;
   margin: 30px 0;
   color: #4caf50;
@@ -73,7 +73,6 @@ textarea {
   background-color: #4caf50;
   color: white;
 }
-
 
 .form_btn_submit, .form_btn_reset {
   width: 150px;
@@ -106,4 +105,108 @@ textarea {
 
 .card_recipes {
   width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  /* height: 300px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card_title {
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 10px;
+  color: #43a047;
+}
+
+.card_ingridients_title,
+.card_ingridients_title {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #43a047;
+}
+
+.card_ingridients,
+.card_instructions {
+  font-size: 0.9rem;
+  overflow-y: auto; /* Solo muestra el scroll si hace falta */
+  max-height: 100px;
+  margin-top: 5px;
+}
+
+.card_ingridients {
+  height: 80px;
+}
+.card_instructions {
+  height: 600px;
+}
+
+.card_category {
+  margin-top: 10px;
+  background-color: #fff;
+  text-align: center;
+  width: 100px;
+  padding: 3px;
+  color: #000;
+  border: 1px solid #43a047;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+.card_btns {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card_btn {
+  width: 80px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  color: #000;
+  border-radius: 5px;
+}
+
+.card_btn_delete,
+.card_btn_edit {
+  border: 1px solid #fff;
+}
+
+.card_btn_delete:hover {
+  border: 1px solid #ff000068;
+  /* background-color: #f88383; */
+}
+
+.card_btn_edit:hover {
+  border: 1px solid #00268e64;
+}
+
+  /* background-color: #9ab1f0; */
+
+.card_ingridients::-webkit-scrollbar,
+.card_instructions::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card_ingridients::-webkit-scrollbar-track,
+.card_instructions::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.card_ingridients::-webkit-scrollbar-thumb,
+.card_instructions::-webkit-scrollbar-thumb {
+  background: #ece8e8;
+  border-radius: 5px;
+}
+
+.card_ingridients::-webkit-scrollbar-thumb:hover,
+.card_instructions::-webkit-scrollbar-thumb:hover {
+  background: #888;
+  cursor: pointer;
 }
