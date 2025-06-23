@@ -1,7 +1,7 @@
 const form = document.querySelector('.form')
 const cards = document.getElementById('recipes')
 
-const entries = JSON.parse(localStorage.getItem('entriesRecipe')) || []
+let entries = JSON.parse(localStorage.getItem('entriesRecipe')) || []
 let editRecipe = false
 let editingId
 
@@ -34,6 +34,7 @@ form.addEventListener('submit', (e) => {
   }
 
   localStorage.setItem('entriesRecipe', JSON.stringify(entryEditAdd))
+
   createCard()
 
   editingId = ''
@@ -87,6 +88,7 @@ function handleDelete(id) {
   if (confirmMsg) {
     const updateentries = entries.filter((entry) => entry.id !== id)
     localStorage.setItem('entriesRecipe', JSON.stringify(updateentries))
+    entries = JSON.parse(localStorage.getItem('entriesRecipe'))
     createCard()
   }
 }
