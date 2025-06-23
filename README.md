@@ -3,7 +3,7 @@
 ## Step by step, line by line — becoming a Full Stack Developer in one year.
 
 ✅ **HTML**  
-- Built the structure of the app using semantic elements like <form>, <input>, <button>, <section>, and <article>
+- Built the structure of the app using semantic elements like ```<form>, <input>, <button>, <section>, and <article>```
 - Created a form to add recipes with fields for recipe name, ingredients, instructions, and category
 - Added a container to display dynamically generated recipe cards
 - Included edit and delete buttons for each card
